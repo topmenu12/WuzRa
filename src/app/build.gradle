@@ -38,3 +38,6 @@ repositories {
     mavenCentral()
     maven { url "https://jitpack.io" }
 }
+packagingOptions {
+    resources.excludes.add("META-INF/DEPENDENCIES")
+}
