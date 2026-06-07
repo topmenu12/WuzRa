@@ -29,12 +29,10 @@ android {
 }
 
 dependencies {
-
     implementation libs.okhttp
     implementation libs.appcompat.v161
-
-
 }
+
 repositories {
     google()
     mavenCentral()
