@@ -5,7 +5,7 @@ plugins {
 android {
     namespace 'com.yiwugou.yiwukanz'
     compileSdk 34
-
+    
     defaultConfig {
         applicationId "com.yiwugou.yiwukanz"
         minSdk 24
