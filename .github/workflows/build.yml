@@ -12,13 +12,14 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-      - name: List src directory
-        run: ls -la src/
       - name: Build APK
         run: |
           cd src
-          chmod +x gradlew
-          ./gradlew assembleRelease
+          echo "Current directory: $(pwd)"
+          echo "Listing files:"
+          ls -la
+          # Run gradlew using bash (no need for execute permission)
+          bash gradlew assembleRelease
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
