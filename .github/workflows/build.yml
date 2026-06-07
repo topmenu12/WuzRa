@@ -12,6 +12,8 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
+      - name: List src directory
+        run: ls -la src/
       - name: Build APK
         run: |
           cd src
