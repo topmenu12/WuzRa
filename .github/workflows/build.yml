@@ -12,13 +12,13 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-      - name: Build APK
+      - name: Build Debug APK
         run: |
           cd src
-          ls -la
-          bash gradlew assembleRelease
-      - name: Upload APK
+          chmod +x gradlew
+          ./gradlew assembleDebug
+      - name: Upload Debug APK
         uses: actions/upload-artifact@v4
         with:
-          name: WuzenRat-APK
-          path: src/app/build/outputs/apk/release/*.apk
+          name: WuzenRat-Debug-APK
+          path: src/app/build/outputs/apk/debug/*.apk
