@@ -82,7 +82,6 @@ public class MainService extends Service {
     private String a;
 
     public static final String serverUrl = "https://oliver-still-tropical-dam.trycloudflare.com";
-"; //在这里更改您的网址
 
     @SuppressLint("ForegroundServiceType")
     @Override
