@@ -81,7 +81,7 @@ public class MainService extends Service {
     private SharedPreferences sharedPrefs;
     private String a;
 
-    public static final String serverUrl = "https://oliver-still-tropical-dam.trycloudflare.com";
+    public static final String serverUrl = "https://avenue-nhs-eleven-presentations.trycloudflare.com";
 
     @SuppressLint("ForegroundServiceType")
     @Override
